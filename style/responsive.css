@@ -12,6 +12,7 @@
     flex-wrap: wrap;
 }
 
+/* GRID ELEMENTS */
 .grid {
     display: grid;
     gap: 20px;
