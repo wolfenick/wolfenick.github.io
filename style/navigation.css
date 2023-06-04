@@ -1,0 +1,55 @@
+.logo {
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.nav-btn {
+    border-radius: 15px;
+    width: 100px;
+    padding: 10px;
+
+    line-height: 40px;
+    text-align: center;
+
+    font-family: 'Sanchez', serif;
+    color: black;
+    text-decoration: none;
+
+    transition: 0.4s;
+}
+
+.nav-btn:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1) inset;
+}
+
+.nav-mid {
+    flex-grow: 1;
+    max-width: 1200px;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    padding-left: auto;
+    padding-right: auto;
+
+    background-color: white;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav_container {
+    display: flex;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    gap: 10px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    max-width: 1200px;
+}
