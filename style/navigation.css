@@ -1,7 +1,41 @@
-/* HEADER */
+/* NAVIGATION BAR */
+.nav {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+
+    z-index: 1;
+
+    background-color: white;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
 .logo {
     border-radius: 15px;
     padding: 15px;
+    padding-left: 0;
+}
+
+/* EXPANDED ELEMENTS */
+.nav-container {
+    display: flex;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    gap: 10px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    max-width: 1200px;
+}
+
+.btn-container {
+    width: 100%;
+
+    display: none;
+    gap: 10px;
 }
 
 .nav-btn {
@@ -24,36 +58,62 @@
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1) inset;
 }
 
-.nav-mid {
-    flex-grow: 1;
-}
-
-.nav {
-    position: fixed;
-    top: 0;
-    width: 100vw;
-
-    z-index: 1;
-
-    padding-left: auto;
-    padding-right: auto;
-
-    background-color: white;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
-}
-
-.nav_container {
-    display: flex;
-
+.end-btn {
     margin-left: auto;
-    margin-right: auto;
+}
 
-    gap: 10px;
+/* COLLAPSED ELEMENTS */
+.ham-container {
+    display: none;
+    height: 50px;
+    width: 100%;
+    background-color: white;
+}
+
+.ham-btn {
+    padding: 20px;
+    padding-left: 35px;
+    line-height: 40px;
+    width: 100%;
+
+    font-family: 'Sanchez', serif;
+    color: black;
+    text-decoration: none;
+
+    transition: 0.4s;
+}
+
+.ham-btn:hover {
+    background-color: #f0f0f0;
+}
+
+.hamburger {
+    margin-left: auto;
+    border-radius: 15px;
+    width: 60px;
     padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
 
-    max-width: 1200px;
+    line-height: 40px;
+    text-align: center;
+
+    font-family: 'Sanchez', serif;
+    color: black;
+    text-decoration: none;
+}
+
+/* NAVIGATION CONTROL */
+@media only screen and (min-width: 650px) {
+    .btn-container {
+        display: flex;
+    }
+
+    .hamburger, .ham-container {
+        display: none;
+    }
+
+    .nav {
+        position: fixed;
+    }
 }
 
 /* LAYOUT */
