@@ -46,6 +46,8 @@
     text-align: center;
 
     font-family: 'ITC Lubalin', serif;
+    font-weight: normal;
+    font-style: normal;
     color: black;
     text-decoration: none;
 
@@ -77,7 +79,9 @@ body.hasHover .nav-btn:hover {
 
     background-color: white;
 
-    font-family: 'Sanchez', serif;
+    font-family: 'ITC Lubalin', serif;
+    font-weight: normal;
+    font-style: normal;
     color: black;
     text-decoration: none;
 
