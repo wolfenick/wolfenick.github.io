@@ -53,7 +53,7 @@
     transition: 0.4s;
 }
 
-.nav-btn:hover {
+body.hasHover .nav-btn:hover {
     background-color: #f0f0f0;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1) inset;
 }
@@ -85,7 +85,7 @@
     transition: 0.4s;
 }
 
-.ham-btn:hover {
+body.hasHover .ham-btn:hover {
     background-color: #f0f0f0;
 }
 
