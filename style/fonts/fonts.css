@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'ITC Lubalin';
+    src: url('itc_lubalin/itc_lubalin.woff2') format('woff2'),
+         url('itc_lubalin/itc_lubalin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arimo';
+    src: url('arimo/arimo.woff2') format('woff2'),
+         url('arimo/arimo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
