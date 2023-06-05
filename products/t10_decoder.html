@@ -11,12 +11,18 @@
         <link rel="icon" type="image/x-icon" href="assets/icon_wolfe.svg">
 
         <!-- Font Includes -->
+        <link rel="preload" as="font" href="style/fonts/itc_lubalin/itc_lubalin.woff2">
+        <link rel="preload" as="font" href="style/fonts/itc_lubalin/itc_lubalin.woff">
+        <link rel="preload" as="font" href="style/fonts/arimo/arimo.woff2">
+        <link rel="preload" as="font" href="style/fonts/arimo/arimo.woff">
+
         <link rel="stylesheet" href="style/fonts/fonts.css">
 
         <!-- Local Stylesheets -->
         <link rel="stylesheet" href="style/responsive.css">
         <link rel="stylesheet" href="style/style.css">
         <link rel="stylesheet" href="style/navigation.css">
+        <link rel="stylesheet" href="style/carousel.css">
 
         <!-- JavaScript -->
         <script src="script/navigation.js"></script>
@@ -63,12 +69,22 @@
                 <h1>T10 DECODER</h1>
 
                 <!-- Product Image + Pricing -->
-                <div class="flex">
-                    <div class="img-card" style="flex-grow: 2">
-                        <img src="assets/coffee.jpeg" height="500px">
+                <div class="grid">
+                    <div id="car-container" style="grid-column-end: 2">
+                        <ul id="car">
+                            <li class="car-img" id="first">
+                                <img src="assets/coffee.jpeg">
+                            </li>
+                            <li class="car-img" id="second">
+                                <img src="assets/coffee.jpeg">
+                            </li>
+                            <li class="car-img" id="third">
+                                <img src="assets/coffee.jpeg">
+                            </li>
+                        </ul>
                     </div>
 
-                    <div class="card" style="flex-grow: 1">
+                    <div class="card" style="grid-column-end: auto;">
                         <h3>AT A GLANCE</h3>
                         <ul>
                             <li>For Märklin and TRIX C-Track turnouts.</li>
@@ -76,6 +92,14 @@
                             <li>Up to 2044 addresses with DCC and 320 with MM.</li>
                             <li>Fast and simple one-button programming.</li>
                         </ul>
+                        <div class="flex">
+                            <div class="card-in">
+                                <h3>MARKLIN</h3>
+                            </div>
+                            <div class="card-in">
+                                <h3>TRIX</h3>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -84,6 +108,13 @@
                     <div class="card">
                         <h3>DESCRIPTION</h3>
                         <p>The T10 decoder is suitable for Märklin and TRIX C-Track turnouts. The decoder is capable of operating with both DCC and MM with 2044 and 320 addresses respectively. The protocol used to program addresses is remembered and adhered to in operation. The decoder has a light output for connection of an LED turnout lantern. The two motor outputs and lantern output can each be given unique addresses. The lantern can be controlled by a separate address, static, or switch with the turnout position. The lantern switches on and off with a fading effect. The decoder remembers the turnout position and lantern state when power is lost. The decoder is programmed by a programming button accessable underneath the turnout once installed. Two programming modes give maximum flexibility of address setting without complex CV programming.</p>
+                    </div>
+                </div>
+
+                <!-- Documentation -->
+                <div class="flex">
+                    <div class="card">
+                        <h3>DOCUMENTATION</h3>
                     </div>
                 </div>
             </div>
