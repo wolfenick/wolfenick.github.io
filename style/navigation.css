@@ -65,16 +65,18 @@
 /* COLLAPSED ELEMENTS */
 .ham-container {
     display: none;
-    height: 50px;
-    width: 100%;
+    width: 100vw;
     background-color: white;
+    box-shadow: 0px 4px 8px -8px rgba(0, 0, 0, 0.1);
 }
 
-.ham-btn {
-    padding: 20px;
+.ham-btn{
+    display: block;
+    padding: 5px;
     padding-left: 35px;
     line-height: 40px;
-    width: 100%;
+
+    background-color: white;
 
     font-family: 'Sanchez', serif;
     color: black;
@@ -87,17 +89,12 @@
     background-color: #f0f0f0;
 }
 
-.hamburger {
+.ham-icon {
     margin-left: auto;
-    border-radius: 15px;
-    width: 60px;
-    padding: 10px;
+    width: 45px;
+    padding: 15px;
+    padding-right: 0;
 
-    line-height: 40px;
-    text-align: center;
-
-    font-family: 'Sanchez', serif;
-    color: black;
     text-decoration: none;
 }
 
@@ -107,12 +104,16 @@
         display: flex;
     }
 
-    .hamburger, .ham-container {
+    .ham-icon {
         display: none;
     }
 
     .nav {
         position: fixed;
+    }
+
+    body {
+        background-color: #f0f0f0;
     }
 }
 
@@ -124,6 +125,8 @@
 
     margin-top: 80px;
     padding-bottom: 80px;
+
+    background-color: #f0f0f0;
 }
 
 .content {
