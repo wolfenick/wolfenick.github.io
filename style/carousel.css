@@ -44,11 +44,18 @@
 /* FLICKITY DOTS */
 .flickity-page-dots {
     bottom: -20px;
+    height: 10px;
 }
 
 .flickity-page-dots .dot {
+    position: relative;
+    bottom: 7px;
+
     width: 10px;
     height: 10px;
+    margin: 0px 10px;
+
+    line-height: 0px;
 
     opacity: 1;
     background-color: #f0f0f0;
