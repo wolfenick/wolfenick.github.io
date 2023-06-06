@@ -37,3 +37,20 @@
 
     min-width: 300px;
 }
+
+.prod-doc-item {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.prod-doc-item p {
+    display: inline;
+    margin: 0;
+    padding: 0;
+
+    flex-grow: 1;
+}
+
+.prod-doc-item p:first-child {
+    flex-grow: 1000;
+}
