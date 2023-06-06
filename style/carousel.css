@@ -1,7 +1,7 @@
 /* CAROUSEL CARD */
 .car-card {
     border-radius: 20px;
-    padding: 10px;
+    padding: 5px;
 
     background-color: var(--foreground);
     box-shadow: var(--shadow);
@@ -10,9 +10,9 @@
 /* FLICKITY CAROUSEL */
 .flickity-viewport {
     height: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 
-    border-radius: 10px;
+    border-radius: 15px;
     overflow: hidden;
 }
 
@@ -21,13 +21,15 @@
 
     height: 400px;
     width: 100%;
+
+    border-radius: 15px;
+    overflow: hidden;
 }
 
 .carousel-cell img {
     height: 100%;
     width: 100%;
 
-    border-radius: 10px;
     object-fit: cover;
 }
 
@@ -38,7 +40,7 @@
 
     height: 100%;
     width: 10%;
-    border-radius: 10px;
+    border-radius: 0;
 
     padding: 0;
     margin: 0;
@@ -52,6 +54,16 @@
 
     width: 40%;
     height: 40%;
+}
+
+.flickity-prev-next-button.previous {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.flickity-prev-next-button.next {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 .flickity-button:hover {

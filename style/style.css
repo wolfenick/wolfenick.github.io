@@ -19,7 +19,7 @@ input[type="radio"] {
     
     margin: 0;
     padding: 0;
-    
+
     width: 0;
     height: 0;
 }
@@ -153,7 +153,7 @@ body.hasHover .product:hover {
 
     border-radius: 10px;
     background-color: var(--foreground);
-    box-shadow: var(--shadow);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
 
     transition: 0.2s;
 }
@@ -164,6 +164,7 @@ body.hasHover .product:hover {
 
     background-color: var(--background);
     box-shadow: var(--shadow) inset;
+    border-color: rgba(0, 0, 0, 0);
 }
 
 body.hasHover .opt-radio:hover {
