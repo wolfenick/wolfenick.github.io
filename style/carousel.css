@@ -3,8 +3,8 @@
     border-radius: 20px;
     padding: 10px;
 
-    background-color: white;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: var(--foreground);
+    box-shadow: var(--shadow);
 }
 
 /* FLICKITY CAROUSEL */
@@ -34,17 +34,29 @@
 /* FLICKITY BUTTONS */
 .flickity-button {
     display: none;
-}
+    opacity: 0;
 
-body.hasHover .flickity-button:not(:disabled) {
-    display: block;
+    height: 100%;
+    width: 10%;
+    border-radius: 10px;
+
+    padding: 0;
+    margin: 0;
+
     transition: 0.4s;
 }
 
-.flickity-button:disabled {
-    display: none;
+.flickity-prev-next-button  .flickity-button-icon {
+    left: 30%;
+    top: 30%;
+
+    width: 40%;
+    height: 40%;
 }
-  
+
+.flickity-button:hover {
+    opacity: 0.5;
+}
 
 /* FLICKITY DOTS */
 .flickity-page-dots {
@@ -61,12 +73,17 @@ body.hasHover .flickity-button:not(:disabled) {
     margin: 0px 10px;
 
     opacity: 1;
-    background-color: #f0f0f0;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1) inset;
+    background-color: var(--background);
+    box-shadow: var(--shadow) inset;
 
     transition: 0.2s;
 }
 
 .flickity-page-dots .dot.is-selected {
     background-color: black;
+}
+
+/* NON-TOUCH */
+body.hasHover .flickity-button:not(:disabled) {
+    display: block;
 }

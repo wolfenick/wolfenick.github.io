@@ -2,7 +2,7 @@
 
 <html>
     <head>
-        
+
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width,  initial-scale=1.0">
         <base href="../index.html">
@@ -94,21 +94,33 @@
                     </div>
 
                     <div class="card">
-                        <h3>AT A GLANCE</h3>
+                        <!-- SUMMARY INFO -->
+                        <h3>SUMMARY</h3>
+
                         <ul>
                             <li>For Märklin and TRIX C-Track turnouts.</li>
                             <li>DCC and MM compatible.</li>
-                            <li>Up to 2044 addresses with DCC and 320 with MM.</li>
                             <li>Fast and simple one-button programming.</li>
                         </ul>
-                        <div class="flex">
-                            <div class="card-in">
-                                <h3>MARKLIN</h3>
-                            </div>
-                            <div class="card-in">
-                                <h3>TRIX</h3>
-                            </div>
+
+                        <!-- RADIO OPTIONS -->
+                        <h3>CONNECTOR</h3>
+
+                        <div class="grid" style="grid-template-columns: repeat(2, 1fr);">
+        
+                            <label class="opt-radio">
+                                <input type="radio" name="track" checked>
+                                MÄRKLIN
+                            </label>
+
+                            <label class="opt-radio">
+                                <input type="radio" name="track" id="trix">
+                                TRIX
+                            </label>
+
                         </div>
+                        
+                        
                     </div>
                 </div>
 

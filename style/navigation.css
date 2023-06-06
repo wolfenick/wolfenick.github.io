@@ -6,7 +6,7 @@
 
     z-index: 1;
 
-    background-color: white;
+    background-color: var(--foreground);
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -55,8 +55,8 @@
 }
 
 body.hasHover .nav-btn:hover {
-    background-color: #f0f0f0;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1) inset;
+    background-color: var(--background);
+    box-shadow: var(--shadow) inset;
 }
 
 .end-btn {
@@ -70,8 +70,8 @@ body.hasHover .nav-btn:hover {
 
     z-index: 1;
     
-    background-color: white;
-    box-shadow: 0px 4px 8px -8px rgba(0, 0, 0, 0.1);
+    background-color: var(--foreground);
+    box-shadow: 0px 3px 6px -6px rgba(0, 0, 0, 0.1);
 }
 
 .ham-btn{
@@ -80,7 +80,7 @@ body.hasHover .nav-btn:hover {
     padding-left: 35px;
     line-height: 40px;
 
-    background-color: white;
+    background-color: var(--foreground);
 
     font-family: 'ITC Lubalin', serif;
     font-weight: normal;
@@ -92,7 +92,7 @@ body.hasHover .nav-btn:hover {
 }
 
 body.hasHover .ham-btn:hover {
-    background-color: #f0f0f0;
+    background-color: var(--background);
 }
 
 .ham-icon {
@@ -117,22 +117,18 @@ body.hasHover .ham-btn:hover {
     .nav {
         position: fixed;
     }
-
-    body {
-        background-color: #f0f0f0;
-    }
 }
 
 /* LAYOUT */
 .main {
     position: relative;
     width: 100vw;
-    min-height: calc(100vh - 80px);
+    min-height: 100vh;
 
-    margin-top: 80px;
+    padding-top: 80px;
     padding-bottom: 80px;
 
-    background-color: #f0f0f0;
+    background-color: var(--background);
 }
 
 .content {
@@ -157,6 +153,6 @@ body.hasHover .ham-btn:hover {
 
     box-shadow: 0px -3px 6px rgba(0, 0, 0, 0.1);
 
-    background-color: white;
+    background-color: var(--foreground);
     text-align: center;
 }
