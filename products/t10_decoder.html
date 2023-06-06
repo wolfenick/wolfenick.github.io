@@ -27,6 +27,8 @@
         <link rel="stylesheet" href="style/flickity.css">
         <link rel="stylesheet" href="style/carousel.css">
 
+        <link rel="stylesheet" href="style/product_page.css"
+
         <!-- JavaScript -->
         <link rel="preload" as="script" href="script/navigation.js">
         <link rel="preload" as="script" href="script/flickity.js">
@@ -76,10 +78,10 @@
                 <h1>T10 DECODER</h1>
 
                 <!-- Product Image + Pricing -->
-                <div class="grid">
+                <div class="flex">
 
                     <!-- Carousel -->
-                    <div class="car-card" style="grid-column-end: span 2;">
+                    <div class="prod-car car-card" style="grid-column-end: span 2;">
                         <div class="carousel js-flickity" data-flickity-options='{ "cellAlign": "left", "contain": true }'>
                             <div class="carousel-cell">
                                 <img src="assets/coffee.jpeg">
@@ -93,49 +95,52 @@
                         </div>
                     </div>
 
-                    <div class="card">
+                    <div class="prod-side flex" style="margin-top: 0;">
                         <!-- SUMMARY INFO -->
-                        <h3>SUMMARY</h3>
+                        <div class="prod-info card">
+                            <h3>SUMMARY</h3>
 
-                        <ul>
-                            <li>For Märklin and TRIX C-Track turnouts.</li>
-                            <li>DCC and MM compatible.</li>
-                            <li>Fast and simple one-button programming.</li>
-                        </ul>
-
-                        <!-- RADIO OPTIONS -->
-                        <h3>CONNECTOR</h3>
-
-                        <div class="grid" style="grid-template-columns: repeat(2, 1fr);">
-        
-                            <label class="opt-radio btn">
-                                <input type="radio" name="track" checked/>MÄRKLIN
-                            </label>
-
-                            <label class="opt-radio btn">
-                                <input type="radio" name="track" id="trix"/>TRIX
-                            </label>
-
+                            <ul>
+                                <li>For Märklin and TRIX C-Track turnouts.</li>
+                                <li>DCC and MM compatible.</li>
+                                <li>Fast and simple one-button programming.</li>
+                            </ul>
                         </div>
-                        
-                        
+
+                        <!-- PURCHASE OPTIONS -->
+                        <div class="prod-opts card">
+                            <h3>CONNECTOR</h3>
+
+                            <div class="grid" style="grid-template-columns: repeat(2, 1fr);">
+            
+                                <label class="btn no-select">
+                                    <input type="radio" name="track" checked/>MÄRKLIN
+                                </label>
+
+                                <label class="btn no-select">
+                                    <input type="radio" name="track" id="trix"/>TRIX
+                                </label>
+
+                            </div>
+                        </div>
+
                     </div>
+
                 </div>
 
-                <!-- Description -->
                 <div class="flex">
-                    <div class="card">
+                    <!-- Description -->
+                    <div class="prod-desc card">
                         <h3>DESCRIPTION</h3>
                         <p>The T10 decoder is suitable for Märklin and TRIX C-Track turnouts. The decoder is capable of operating with both DCC and MM with 2044 and 320 addresses respectively. The protocol used to program addresses is remembered and adhered to in operation. The decoder has a light output for connection of an LED turnout lantern. The two motor outputs and lantern output can each be given unique addresses. The lantern can be controlled by a separate address, static, or switch with the turnout position. The lantern switches on and off with a fading effect. The decoder remembers the turnout position and lantern state when power is lost. The decoder is programmed by a programming button accessable underneath the turnout once installed. Two programming modes give maximum flexibility of address setting without complex CV programming.</p>
                     </div>
-                </div>
 
-                <!-- Documentation -->
-                <div class="flex">
-                    <div class="card">
+                    <!-- Documentation -->
+                    <div class="prod-doc card">
                         <h3>DOCUMENTATION</h3>
                     </div>
                 </div>
+
             </div>
 
             <!-- Footer -->

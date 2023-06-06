@@ -9,7 +9,6 @@
 
 /* FLICKITY CAROUSEL */
 .flickity-viewport {
-    height: 100%;
     margin-bottom: 25px;
 
     border-radius: 15px;
@@ -18,8 +17,8 @@
 
 .carousel-cell {
     margin-right: 10px;
+    height: 500px;
 
-    height: 400px;
     width: 100%;
 
     border-radius: 15px;

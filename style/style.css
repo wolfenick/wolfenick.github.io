@@ -66,16 +66,23 @@ ul {
     margin-left: 20px;
 }
 
+/* FUNCTION OVERRIDES */
+.no-select {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 /* CARDS */
 .card, .card-btn, .img-card {
     border-radius: 20px;
     padding: 20px;
     padding-top: 0;
 
-    overflow: auto;
+    width: 100%;
 
-    flex-basis: 300px;
-    flex-grow: 1;
+    overflow: auto;
 
     box-shadow: var(--shadow);
 
@@ -142,7 +149,7 @@ body.hasHover .product:hover {
 /* BUTTONS */
 .btn {
     cursor: pointer;
-    
+
     height: 100%;
     width: 100%;
 
