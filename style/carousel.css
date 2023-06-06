@@ -1,46 +1,62 @@
-#car-container {
+/* CAROUSEL CARD */
+.car-card {
     border-radius: 20px;
-
-    margin: 0;
-    padding: 0;
-
-    background-color: white;
-
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-
-    -webkit-overflow-scrolling: touch;
-
-    --slide-count: 3;
-}
-
-#car-container::-webkit-scrollbar {
-    display: none;
-}
-
-#car {
-    margin: 0;
-    padding: 0;
-
-    height: 100%;
-    width: calc(100% * var(--slide-count));
-
-    display: flex;
-}
-
-.car-img {
     padding: 10px;
 
-    list-style-type: none;
-
-    scroll-snap-align: start;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.car-img img {
-    border-radius: 10px;
-
-    width: 100%;
+/* FLICKITY CAROUSEL */
+.flickity-viewport {
     height: 100%;
+    margin-bottom: 20px;
+
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.carousel-cell {
+    margin-right: 10px;
+
+    height: 400px;
+    width: 100%;
+}
+
+.carousel-cell img {
+    height: 100%;
+    width: 100%;
+
+    border-radius: 10px;
     object-fit: cover;
+}
+
+/* FLICKITY BUTTONS */
+.flickity-button {
+    transition: 0.4s;
+}
+
+.flickity-button:disabled {
+    display: none;
+}
+  
+
+/* FLICKITY DOTS */
+.flickity-page-dots {
+    bottom: -23px;
+}
+
+.flickity-page-dots .dot {
+    width: 10px;
+    height: 10px;
+
+    opacity: 1;
+    background-color: #f0f0f0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2) inset;
+
+    transition: 0.2s;
+}
+
+.flickity-page-dots .dot.is-selected {
+    background-color: black;
 }
