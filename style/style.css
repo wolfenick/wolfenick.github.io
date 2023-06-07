@@ -1,9 +1,20 @@
 /* GLOBAL */
 :root {
+    /* standard */
     --background: #f0f0f0;
     --foreground: white;
+
     --shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
     --shadow-hover: 0px 3px 9px rgba(0, 0, 0, 0.25);
+
+    /* deluxe */
+    --deluxe: linear-gradient(#cbcbcb, #3e3e3e);
+    --deluxe-text: #fff4ce;
+    --deluxe-shadow: 0px 3px 6px rgba(0, 0, 0, 0.25);
+
+    --deluxe-text-hover: #fffaec;
+    --deluxe-text-hover-shadow: 0px 0px 3px #ffe277ce;
+    --deluxe-hover-shadow: 0px 3px 9px rgba(0, 0, 0, 0.4);
 }
 
 /* STYLE RESET AND BASIC SETUP */
@@ -13,16 +24,8 @@
     margin: 0;
 }
 
-input[type="radio"] {
-    -webkit-appearance: none;
-    appearance: none;
-    display: none;
-    
-    margin: 0;
-    padding: 0;
-
-    width: 0;
-    height: 0;
+html {
+    overflow-x: hidden;
 }
 
 body {
@@ -36,6 +39,18 @@ body {
     font-family: 'Arimo', sans-serif;
     font-weight: normal;
     font-style: normal;
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+    display: none;
+    
+    margin: 0;
+    padding: 0;
+
+    width: 0;
+    height: 0;
 }
 
 /* CONTENT */
@@ -76,7 +91,7 @@ ul {
 }
 
 /* CARDS */
-.card, .card-btn, .card-frame {
+.card, .card-btn, .card-frame, .card-dlx, .card-dlx-btn {
     border-radius: 20px;
     padding: 20px;
     padding-top: 0;
@@ -123,6 +138,20 @@ body.hasHover .card-btn:hover {
 body.hasHover .product:hover {
     transform: scale(1.01);
     box-shadow: var(--shadow-hover);
+}
+
+/* DELUXE CARDS */
+.card-dlx, .card-dlx-btn {
+    background-image: var(--deluxe);
+    color: var(--deluxe-text);
+    box-shadow: var(--deluxe-shadow);
+}
+
+body.hasHover .card-dlx-btn:hover {
+    transform: scale(1.01);
+    color: var(--deluxe-text-hover);
+    text-shadow: var(--deluxe-text-hover-shadow);
+    box-shadow: var(--deluxe-hover-shadow);
 }
 
 /* BUTTONS */
