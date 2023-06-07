@@ -113,13 +113,11 @@
 
                             <div class="grid" style="grid-template-columns: repeat(2, 1fr);">
             
-                                <label class="btn no-select">
-                                    <input type="radio" name="track" checked/>MÄRKLIN
-                                </label>
-
-                                <label class="btn no-select">
-                                    <input type="radio" name="track" id="trix"/>TRIX
-                                </label>
+                                <input type="radio" name="track" id="marklin" checked="">
+                                <label class="btn no-select" for="marklin">MÄRKLIN</label>
+                            
+                                <input type="radio" name="track" id="trix">
+                                <label class="btn no-select" for="trix">TRIX</label>
 
                             </div>
                         </div>
@@ -158,11 +156,13 @@
                 <h1>WHY WOLFE DECODERS?</h1>
                 <div class="card" style="margin-top: 20px;">
                     <div class="flex">
-                        <div class="card-btn prod-info" style="
+                        <div class="card-frame prod-info" style="
                             background-image: linear-gradient(160deg, rgb(244, 253, 255), #d8e7ff); flex-basis: 300px;
                             ">
                             <h3 style="text-align: center;">CONVENIENCE</h3>
-                            <p>WOLFE decoders are easy to program and easy to use - all it takes is the press of a button. This makes WOLFE decoders especially suitable for reprogrammable applications, such as reconfigurable model railways, or set-up take-down use.</p>
+                            <div class="card-hole foreground">
+                                <p>WOLFE decoders are easy to program and easy to use - all it takes is the press of a button. This makes WOLFE decoders especially suitable for reprogrammable applications, such as reconfigurable model railways, or set-up take-down use.</p>
+                            </div>
                         </div>
 
                         <div class="card-btn prod-info" style="
