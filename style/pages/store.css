@@ -1,3 +1,4 @@
+/* BASIC ITEMS */
 .store-img {
     margin-top: 5px;
     border-radius: 15px;
@@ -25,8 +26,26 @@
     flex-grow: 1;
 }
 
-
 .store-desc p {
     width: 100%;
     text-align: justify;
+}
+
+/* DELUXE MODIFIER */
+.item-dlx {
+    background-image: linear-gradient(#b3b3b3, #3e3e3e);
+    color: #e4d18d;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.25);
+    transition: 0.4s;
+}
+
+.item-dlx .store-img {
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25) inset;
+}
+
+body.hasHover .item-dlx:hover {
+    transform: scale(1.01);
+    color: #f9eec6;
+    text-shadow: 0px 0px 2px #e4d18d;
+    box-shadow: 0px 0px 12px #ffe484;
 }
