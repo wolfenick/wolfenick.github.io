@@ -34,7 +34,7 @@
 /* DELUXE MODIFIER */
 .item-dlx {
     background-image: linear-gradient(#b3b3b3, #3e3e3e);
-    color: #e4d18d;
+    color: #ead99c;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.25);
     transition: 0.4s;
 }
@@ -46,6 +46,6 @@
 body.hasHover .item-dlx:hover {
     transform: scale(1.01);
     color: #f9eec6;
-    text-shadow: 0px 0px 2px #e4d18d;
+    text-shadow: 0px 0px 1px #ead99c;
     box-shadow: 0px 0px 12px #ffe484;
 }
