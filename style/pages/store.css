@@ -1,0 +1,32 @@
+.store-img {
+    margin-top: 5px;
+    border-radius: 15px;
+
+    height: 200px;
+    width: 100%;
+
+    box-shadow: var(--shadow) inset;
+    background-size: cover;
+    background-position: center;
+}
+
+.store-desc {
+    margin-top: 20px;
+    padding: 15px;
+    padding-top: 0;
+}
+
+.store-desc h3 {
+    margin: 0;
+    display: inline;
+}
+
+.store-desc h3:first-child {
+    flex-grow: 1;
+}
+
+
+.store-desc p {
+    width: 100%;
+    text-align: justify;
+}

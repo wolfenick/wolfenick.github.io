@@ -2,6 +2,7 @@
 
 <html>
     <head>
+
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width,  initial-scale=1.0">
 
@@ -17,14 +18,18 @@
         
         <link rel="stylesheet" href="style/fonts/fonts.css">
 
-        <!-- Local Stylesheets -->
+        <!-- Global Stylesheets -->
         <link rel="stylesheet" href="style/responsive.css">
         <link rel="stylesheet" href="style/style.css">
         <link rel="stylesheet" href="style/navigation.css">
 
-        <!-- JavaScript -->
+        <!-- Page Specific Stylesheets -->
+        <link rel="stylesheet" href="style/pages/store.css">
+
+        <!-- Global JavaScript -->
+        <link rel="preload" as="script" href="script/navigation.js">
         <script src="script/navigation.js"></script>
-            
+
     </head>
 
     <body>
@@ -67,41 +72,52 @@
                 <h1>PRODUCTS</h1>
 
                 <div class="grid">
-                    <a class="product" href="products/t15_decoder.html">
-                        <img src="assets/coffee.jpeg">
-                        <div class="flex product-desc">
-                            <h2 style="flex-grow: 1;">COFFEE</h2>
-                            <h2>10 NZD</h2>
-                            <p>We sell coffee now. Come and get your fresh coffee!</p>
+
+                    <a class="card-btn card-frame" href="products/t10_decoder.html">
+                        <div class="store-img" style="background-image: url(assets/coffee.jpeg);"></div>
+                        <div class="store-desc">
+                            <div class="flex">
+                                <h3>T10 DECODER</h3>
+                                <h3>30 NZD</h3>
+                            </div>
+                            <p>For use with single-motor C-Track turnouts.</p>
                         </div>
                     </a>
-    
-                    <a class="product" href="products/t10_decoder.html">
-                        <img src="assets/venue.jpeg">
-                        <div class="flex product-desc">
-                            <h2 style="flex-grow: 1;">T10 DECODER</h2>
-                            <h2>30 NZD</h2>
-                            <p>For use with C-Track turnouts.</p>
+
+                    <a class="card-btn card-frame" href="#">
+                        <div class="store-img" style="background-image: url(assets/coffee.jpeg);"></div>
+                        <div class="store-desc">
+                            <div class="flex">
+                                <h3 style="flex-grow: 1;">T10 DECODER</h3>
+                                <h3>30 NZD</h3>
+                            </div>
+                            <p>For use with single-motor C-Track turnouts.</p>
                         </div>
                     </a>
-    
-                    <div class="product">
-                        <img src="assets/coffee.jpeg">
-                        <div class="flex product-desc">
-                            <h2 style="flex-grow: 1;">COFFEE</h2>
-                            <h2>15 NZD</h2>
-                            <p>This is the same coffee you're already selling! And now you've made it more expensive!</p>
+
+                    <a class="card-btn card-frame" href="#">
+                        <div class="store-img" style="background-image: url(assets/coffee.jpeg);"></div>
+                        <div class="store-desc">
+                            <div class="flex">
+                                <h3 style="flex-grow: 1;">T10 DECODER</h3>
+                                <h3>30 NZD</h3>
+                            </div>
+                            <p>For use with single-motor C-Track turnouts.</p>
                         </div>
-                    </div>
-    
-                    <div class="product">
-                        <img src="assets/coffee.jpeg">
-                        <div class="flex product-desc">
-                            <h2 style="flex-grow: 1;">COFFEE</h2>
-                            <h2>15 NZD</h2>
-                            <p>This is the same coffee you're already selling! And now you've made it more expensive!</p>
+                    </a>
+                    
+                    <a class="card-btn card-frame" href="#">
+                        <div class="store-img" style="background-image: url(assets/coffee.jpeg);"></div>
+                        <div class="store-desc">
+                            <div class="flex">
+                                <h3 style="flex-grow: 1;">T10 DECODER</h3>
+                                <h3>30 NZD</h3>
+                            </div>
+                            <p>For use with single-motor C-Track turnouts.</p>
                         </div>
-                    </div>
+                    </a>
+                    
+
                 </div>
             </div>
 

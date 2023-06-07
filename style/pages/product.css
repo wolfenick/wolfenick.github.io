@@ -48,10 +48,8 @@
     display: inline;
     margin: 0;
     padding: 0;
-
-    flex-grow: 1;
 }
 
 .prod-doc-item p:first-child {
-    flex-grow: 1000;
+    flex-grow: 1;
 }
